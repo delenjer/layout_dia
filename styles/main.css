@@ -46,7 +46,7 @@
     transition: -webkit-box-shadow 0.5s;
     transition: box-shadow 0.5s;
     transition: box-shadow 0.5s, -webkit-box-shadow 0.5s; }
-    .header__btn:hover {
+    .header__btn:hover, .header__btn:focus {
       -webkit-box-shadow: 0 0 10px rgba(225, 225, 225, 0.5);
               box-shadow: 0 0 10px rgba(225, 225, 225, 0.5); }
   @media (max-width: 992px) {
@@ -98,8 +98,9 @@
     background-color: #2060f6;
     border-radius: 4px;
     -webkit-transition: width 0.5s;
-    transition: width 0.5s; }
-  .nav__link:hover:after {
+    transition: width 0.5s;
+    outline: none; }
+  .nav__link:hover:after, .nav__link:focus:after {
     width: 100%; }
 
 @media (max-width: 992px) {
@@ -244,7 +245,7 @@
       margin-right: 8px; }
     .slider__btn--next {
       background-image: url("../images/slider/next.svg"); }
-    .slider__btn:hover {
+    .slider__btn:hover, .slider__btn:focus {
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
               box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   .slider__content {
@@ -418,7 +419,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .article__link:hover .link-sign {
+    .article__link:hover .link-sign, .article__link:focus .link-sign {
       -webkit-transform: translate(10px, 0);
               transform: translate(10px, 0); }
   .article__link-sign {
@@ -659,7 +660,7 @@
     padding: 15px 91px 18px;
     -webkit-transition: 0.5s;
     transition: 0.5s; }
-    .service__btn:hover {
+    .service__btn:hover, .service__btn:focus {
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
               box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   @media (max-width: 778px) {
@@ -783,7 +784,7 @@
     color: #fff;
     -webkit-transition: color 0.5s;
     transition: color 0.5s; }
-    .networks__icon:hover {
+    .networks__icon:hover, .networks__icon:focus {
       color: #2060f6; }
 
 .footer {
@@ -889,7 +890,13 @@ html {
 
 body {
   background: #e5e5e5;
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif; }
+
+a,
+input,
+button:focus {
+  outline: none; }
 
 .wrapper {
   width: 1146px;
@@ -979,7 +986,7 @@ a {
     transition: -webkit-box-shadow 0.5s;
     transition: box-shadow 0.5s;
     transition: box-shadow 0.5s, -webkit-box-shadow 0.5s; }
-    .form__btn:hover {
+    .form__btn:hover, .form__btn:focus {
       -webkit-box-shadow: 0 0 10px rgba(225, 225, 225, 0.5);
               box-shadow: 0 0 10px rgba(225, 225, 225, 0.5); }
   @media (max-width: 992px) {
