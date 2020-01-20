@@ -539,6 +539,9 @@
   @media (min-width: 1600px) {
     .approach .wrapper {
       width: calc(1146px + 121px); } }
+  @media (max-width: 1600px) {
+    .approach .wrapper {
+      width: 100%; } }
 
 .testimonials {
   margin: 148px 0 168px; }
