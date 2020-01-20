@@ -520,7 +520,7 @@
         display: none; } }
   @media (max-width: 992px) {
     .approach__wrapper {
-      padding: 100px 20px; }
+      padding: 100px 0; }
     .approach__content {
       text-align: center; }
     .approach__item {
@@ -534,6 +534,9 @@
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+    .approach__text {
+      width: 100%;
+      padding-left: 0; }
     .approach__icon {
       margin-bottom: 30px; } }
   @media (min-width: 1600px) {
@@ -886,7 +889,6 @@ html {
 
 body {
   background: #e5e5e5;
-  overflow-x: hidden;
   font-family: "Open Sans", sans-serif; }
 
 .wrapper {
